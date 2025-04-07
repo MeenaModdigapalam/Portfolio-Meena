@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Meena Moddigapalam Portfolio</title>
+</head>
+<body onclick="closeSkills(event)">
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Meena <span>Moddigapalam</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#experience">Experience</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" >
+                <img src="./SDT.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Meena</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100"><p>I am a Data Analyst with over 3 years of experience in data analytics, machine learning, and cloud computing. I specialize in extracting insights from complex datasets using Python, SQL, and Power BI, building scalable ETL pipelines, and developing interactive dashboards to drive business decisions. My expertise spans AWS, Azure, and big data technologies like Spark, Hadoop, and Kafka. Passionate about data-driven problem-solving, I thrive on transforming raw data into actionable insights that optimize operations and enhance efficiency.</p>
+            </div>
+        </div>
+    </section>
+<!-- Skills Section -->
+<section class="skills-galaxy">
+    <h2 class="skills-title">Technical Skills</h2>
+    <div class="skills-container">
+        <!-- Row 1 -->
+        <div class="skill"><i class="fab fa-python"></i>Python</div>
+        <div class="skill"><i class="fas fa-database"></i>SQL</div>
+
+        <!-- Row 2 -->
+        <div class="skill"><i class="fab fa-microsoft"></i>Power BI</div>
+        <div class="skill"><i class="fab fa-tableau"></i>Tableau</div>
+
+        <!-- Row 3 -->
+        <div class="skill"><i class="fas fa-database"></i>Hadoop</div>
+        <div class="skill"><i class="fas fa-database"></i>Spark</div>
+        <div class="skill"><i class="fab fa-google"></i>BigQuery</div>
+        <div class="skill"><i class="fab fa-aws"></i>AWS</div>
+
+        <!-- Row 4 -->
+        <div class="skill"><i class="fas fa-server"></i>MySQL</div>
+        <div class="skill"><i class="fas fa-cloud"></i>Azure</div>
+
+        <!-- Row 5 -->
+        <div class="skill"><i class="fas fa-cogs"></i>ETL</div>
+        <div class="skill"><i class="fas fa-code"></i>RESTful APIs</div>
+        <div class="skill"><i class="fab fa-docker"></i>Docker</div>
+        <div class="skill"><i class="fab fa-kubernetes"></i>Kubernetes</div>
+    </div>
+    
+           <!-- View All Skills Button -->
+            <button class="view-all-btn unlock-btn" onclick="toggleSkills()">
+                <i class="fa-solid fa-lock"></i> Unlock Skills
+            </button>
+
+            <!-- Skills List (Initially Hidden) -->
+            <div class="skills-list" id="skillsList">
+                <div class="skill-category">
+                    <h3>Programming & Scripting</h3>
+                    <p>Python, R, SQL</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Methodologies</h3>
+                    <p>Agile, Waterfall</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Visualization</h3>
+                    <p>Power BI, Tableau, Microsoft Excel</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Version Control & DevOps Tools</h3>
+                    <p>Git, GitHub, Docker, SVN</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <p>MySQL, SQL, Oracle, MongoDB, NoSQL, Cassandra</p>
+                </div>
+                <div class="skill-category">
+                    <h3>ETL Tools</h3>
+                    <p>Informatica, Apache Airflow, SSIS, Snowflake, Talend, Apache Nifi, Spark</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Analysis</h3>
+                    <p>Data Mining, Reporting, A/B Testing, Data Warehousing</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Big Data & Machine Learning</h3>
+                    <p>Hadoop, Spark, Cassandra, Kafka, HDFS, MapReduce, ML (CNN, LSTM)</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Libraries & Frameworks</h3>
+                    <p>NumPy, Pandas, SciPy, PySpark, Matplotlib, Flask, Django, Bootstrap</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud Platforms</h3>
+                    <p>AWS (S3, EC2, Redshift, IAM, Glue, Athena, QuickSight), Azure (Databricks, Data Lake, Data Factory, Azure Synapse Analytics)</p>
+                </div>
+            </div>
+        </div>
+  
+    
+</section>
+
+
+<section id="experience">
+    <h2 class="section-header">Experience</h2>
+    <div class="experience-container">
+        <div class="experience-box" data-exp-id="cvs" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <h3>System Engineer - TCS<P>Mar 2022 – Dec 2022 INDIA</P></h3>
+        </div>
+        <div class="experience-box" data-exp-id="cipla" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <h3>Data Analyst - Capgemini <p>Sep 2019 – Mar 2022 INDIA</p></h3>
+        </div>
+    </div>
+
+    <div class="experience-details" id="cvs">
+        <h3>Data Analyst - CVS Health</h3>
+        <p>Developed and implemented automated solutions using <strong>Automation Anywhere 360</strong>, resulting in a significant reduction in manual processing time and operational costs.</p>
+
+    <p>Designed, configured, and maintained <strong>RPA bots</strong>, achieving a 30% improvement in workflow efficiency and accuracy.</p>
+
+    <p>Collaborated with cross-functional teams to identify and assess automation opportunities, leading to the successful deployment of <strong>15+ RPA solutions</strong> tailored to business needs.</p>
+
+    <p>Conceptualized batch processing applications using <strong>Spark APIs</strong> and in-memory computing to automate healthcare data workflows, managing <strong>5+ TB</strong> of patient records stored in <strong>AWS S3-based Data Lakes</strong>.</p>
+
+    <p>Crafted <strong>10+ scalable data pipelines</strong> on <strong>AWS (EMR, EC2, Glue, Lambda, Redshift, RDS)</strong> to streamline member eligibility and provider network analytics, improving data accessibility for clinical analytics.</p>
+
+    <p>Executed <strong>ETL/ELT workflows</strong> using <strong>Redshift</strong>, transforming <strong>10+ TB</strong> of raw healthcare data into structured insights supporting cost analysis and population health management.</p>
+
+    <p>Built <strong>Python-based ETL pipelines</strong> to consolidate fragmented healthcare data into centralized <strong>HIPAA-compliant storage</strong>, ensuring seamless access for downstream analytics and reporting.</p>
+
+    <p>Collaborated with cross-functional teams to identify and assess automation opportunities, leading to the successful deployment of <strong>15+ RPA solutions</strong> tailored to business needs.</p>
+
+    <p>Provided training and support to end-users, facilitating a smooth transition and ensuring effective utilization of automated systems.</p>
+
+    <p>Coordinated with stakeholders to gather requirements and ensure alignment with project goals, delivering solutions that met client expectations.</p>
+
+    </div>
+    <div class="experience-details" id="cipla">
+        <h3>Data Analyst - Cipla</h3>
+            <p>Executed predictive analytics using <strong>SQL</strong> on 6,000+ anonymized patient records to uncover drug efficacy patterns, informing strategic decisions for drug development initiatives, including dosage optimization.</p>
+        
+            <p>Leveraged legacy <strong>SQL queries</strong> and <strong>Tableau</strong> data sources, boosting report generation efficiency by enhancing usability for 12+ global stakeholders in regulatory and supply chain teams.</p>
+        
+            <p>Streamlined <strong>Salesforce</strong> data extraction workflows using <strong>Django Celery tasks</strong>, improving report accuracy and timeliness for 50+ healthcare partners, reducing discrepancies in monthly compliance audits.</p>
+        
+            <p>Formulated <strong>Tableau dashboards</strong> to visualize real-time sales performance and patient adherence metrics, enabling stakeholders to resolve operational inefficiencies and save 2.5 hours weekly in the process.</p>
+        
+            <p>Collaborated in <strong>Agile sprints</strong> to align analytics deliverables with <strong>FDA compliance</strong> timelines, reducing task completion time by 1.2 hours per sprint through improved backlog prioritization.</p>
+        
+            <p>Devised <strong>AWS Redshift data warehouses</strong> to consolidate pharmacovigilance data, achieving <strong>500 ms query latency</strong> and maintaining <strong>HIPAA-compliant storage</strong> for 1M+ patient records.</p>
+        
+            <p>Automated data extraction and transformation using <strong>AWS Glue</strong>, reducing manual processing time by 6 hours weekly and ensuring data integrity for 10+ clinical trials.</p>
+    </div>
+</section>
+
+
+
+<section id="projects">
+    <h2 class="section-header">Projects</h2>
+    <div class="projects-container">
+        
+        <!-- California House Price Prediction -->
+        <div class="project-box">
+            <div class="project-content">
+                <h3 class="project-title">California House Price Prediction</h3>
+                <a href="https://github.com/saideep-taddi/R-Shiny-App-for-California-Housing" target="_blank" class="project-github">
+                    <i class="fa-brands fa-github"></i> Click Here
+                </a>
+                <ul class="project-list">
+                    <li>Interactive R Shiny App</li>
+                    <li>Machine Learning</li>
+                    <li>Data Visualization</li>
+                </ul>
+                <p class="project-description">
+                    Built an interactive R Shiny web app for predicting California house prices, 
+                    featuring advanced data exploration, interactive maps, and ML-powered predictions.
+                </p>  
+            </div>
+        </div>
+
+        <!-- Amazon Product Sales Analysis -->
+        <div class="project-box">
+            <div class="project-content">
+                <h3 class="project-title">Amazon Product Sales Analysis</h3>
+                <a href="https://github.com/saideep-taddi/Amazon-Product-Sales-Data-Using-GCP-Big-Query-And-Looker-Studio" target="_blank" class="project-github">
+                    <i class="fa-brands fa-github"></i> Click Here
+                </a>
+                <ul class="project-list">
+                    <li>Google Cloud Platform</li>
+                    <li>Big Query</li>
+                    <li>Looker Studio</li>
+                </ul>
+                <p class="project-description">
+                    Analyzed Amazon sales data using Google Cloud and Looker Studio to extract insights, 
+                    optimize business decisions, and enhance profitability.
+                </p>
+                
+            </div>
+        </div>
+
+        <!-- Analysis of CMS Data for Healthcare Insights -->
+        <div class="project-box">
+            <div class="project-content">
+                <h3 class="project-title">Analysis of CMS Data</h3>
+                <a href="https://github.com/saideep-taddi/ML-Implementation-on-Medicare-services-using-Python" target="_blank" class="project-github">
+                    <i class="fa-brands fa-github"></i> Click Here
+                </a>
+                <ul class="project-list">
+                    <li>Healthcare Data</li>
+                    <li>Predictive Analytics</li>
+                    <li>AI & ML</li>
+                </ul>
+                <p class="project-description">
+                    Conducted in-depth analysis of CMS healthcare data, predicting medical concerns and 
+                    optimizing patient care through AI-driven insights.
+                </p>
+                
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="contact" class="contact-container">
+        <h2  class="section-header">Contact</h2>
+                    <div class="social-links">
+                        <a href="https://github.com/saideep-taddi" ><i class="fa-brands fa-github"></i></a>
+                        <a href="http://linkedin.com/in/saideep-taddi-49a8b12a2" ><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:taddisaideep@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+1 940-231-4270"><i class="fa-solid fa-phone"></i></a> 
+                    </div> 
+
+                    
+</section>
+    <footer class="footer" >
+        <p>&copy; 2022 Saideep Taddi. All rights reserved.</p>
+    </footer>
+   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({offset:0});
+    </script>
+
+</body>
+</html>
